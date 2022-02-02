@@ -40,7 +40,7 @@ let config = {
     'blocks': 'src/blocks/'
   },
   'optionsGHpages': {
-    'remote': 'quiz-app', // options for github-pages
+    'remote': 'classic-cars', // options for github-pages
   }
 };
 
