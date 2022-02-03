@@ -31,6 +31,7 @@ let config = {
   'addAssets': {
     // 'src/img/demo-*.{png,svg,jpg,jpeg}': 'img/',
     // 'src/fonts/*': 'fonts/',
+    'src/blocks/video-gallery/img/*.mp4': 'video/',
     'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
     // 'node_modules/somePackage/images/*.{png,svg,jpg,jpeg}': 'img/',
   },

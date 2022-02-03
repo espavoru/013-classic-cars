@@ -15,7 +15,7 @@ block header
     nav.navbar.target
       a.navbar__link(href='#home') Home
       a.navbar__link(href='#popular-cars') Popular Cars
-      a.navbar__link(href='#video-gallery') Video Gallery
+      a.navbar__link(href='#') Video Gallery
       a.navbar__link(href='#contact') Contact
     ///.navbar
 
@@ -78,3 +78,35 @@ block content
             h4.card__price $ 150,000
             +btn('See more')(class='card__btn', href='#')
     ///.popular-cars
+
+  .page__wrapper
+    section.video-gallery.target#video-gallery
+      h2.section-heading Video Gallery
+
+      .video-gallery__container
+        .video-gallery__row
+          .video-gallery__col
+            +embed-responsive()
+              iframe(src='https://www.youtube.com/embed/zmxvc2_MlIw', frameborder='0', allowfullscreen='')
+            //- video.video-gallery__item(src='video/car-video-1.mp4', muted, loop)
+          .video-gallery__col
+            +embed-responsive()
+              iframe(src='https://www.youtube.com/embed/xS2sWOKGtHk', frameborder='0', allowfullscreen='')
+            //- video.video-gallery__item(src='video/car-video-2.mp4', muted, loop)
+          .video-gallery__col
+            +embed-responsive()
+              iframe(src='https://www.youtube.com/embed/jybhLfwDSPM', frameborder='0', allowfullscreen='')
+            //- video.video-gallery__item(src='video/car-video-3.mp4', muted, loop)
+          .video-gallery__col
+            +embed-responsive()
+              iframe(src='https://www.youtube.com/embed/I-BhhxPs4EM', frameborder='0', allowfullscreen='')
+            //- video.video-gallery__item(src='video/car-video-4.mp4', muted, loop)
+          .video-gallery__col
+            +embed-responsive()
+              iframe(src='https://www.youtube.com/embed/B_YpLWuYZC0', frameborder='0', allowfullscreen='')
+            //- video.video-gallery__item(src='video/car-video-5.mp4', muted, loop)
+          .video-gallery__col
+            +embed-responsive()
+              iframe(src='https://www.youtube.com/embed/ruw7XBOUDOU', frameborder='0', allowfullscreen='')
+            //- video.video-gallery__item(src='video/car-video-6.mp4', muted, loop)
+    ///.video-gallery
