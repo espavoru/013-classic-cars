@@ -21,4 +21,14 @@ block header
 
 block content
   .page__wrapper
-    section.target
+    section.hero.target#home
+      h1.section-heading Classic Cars
+
+      +picture({
+        'img': 'hero-bg-01',
+        'alt': 'Classic Car',
+        'lg': true,
+        'md': true,
+        'ext': 'png'
+      }, 'hero__img')
+    ///.hero

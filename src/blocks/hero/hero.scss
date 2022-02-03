@@ -1,0 +1,75 @@
+// В этом файле должны быть стили для БЭМ-блока hero, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.hero {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $screen-xs) {
+    background-image: url('../img/hero-bg-02-320p.webp');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/hero-bg-02-640p.webp');
+
+      .no-webp & {
+        background-image: url('../img/hero-bg-02-640p.jpg');
+      }
+    }
+
+    .no-webp & {
+      background-image: url('../img/hero-bg-02-320p.jpg');
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    background-image: url('../img/hero-bg-02-640p.webp');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/hero-bg-02-1280p.webp');
+
+      .no-webp & {
+        background-image: url('../img/hero-bg-02-1280p.jpg');
+      }
+    }
+
+    .no-webp & {
+      background-image: url('../img/hero-bg-02-640p.jpg');
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    background-image: url('../img/hero-bg-02-1280p.webp');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/hero-bg-02-2560p.webp');
+
+      .no-webp & {
+        background-image: url('../img/hero-bg-02-2560p.jpg');
+      }
+    }
+
+    .no-webp & {
+      background-image: url('../img/hero-bg-02-1280p.jpg');
+    }
+  }
+
+  .section-heading {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
+  }
+
+  &__img {
+    width: 70%;
+  }
+}
