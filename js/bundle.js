@@ -130,6 +130,17 @@ eval("document.querySelector('.navbar__menu-btn').addEventListener('click', func
 
 /***/ }),
 
+/***/ "./src/blocks/video-gallery/video-gallery.js":
+/*!***************************************************!*\
+  !*** ./src/blocks/video-gallery/video-gallery.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// document.querySelector(\".menu\").addEventListener(\"click\", () => {\n//   document.querySelectorAll(\".target\").forEach((item) => {\n//     item.classList.toggle(\"change\");\n//   });\n// });\n// document.querySelectorAll(\".wrapper\").forEach((item) => {\n//   item.addEventListener(\"click\", () => {\n//     document.querySelectorAll(\".target\").forEach((item) => {\n//       item.classList.remove(\"change\");\n//     });\n//   });\n// });\n// const videos = document.querySelectorAll(\".video\");\n// videos.forEach((video) => {\n//   video.addEventListener(\"mouseover\", () => {\n//     video.play();\n//   });\n//   video.addEventListener(\"mouseout\", () => {\n//     video.pause();\n//   });\n// });\n\n//# sourceURL=webpack:///./src/blocks/video-gallery/video-gallery.js?");
+
+/***/ }),
+
 /***/ "./src/js/entry.js":
 /*!*************************!*\
   !*** ./src/js/entry.js ***!
@@ -137,7 +148,7 @@ eval("document.querySelector('.navbar__menu-btn').addEventListener('click', func
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ../blocks/video-gallery/video-gallery.js */ \"./src/blocks/video-gallery/video-gallery.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 
