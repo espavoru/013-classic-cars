@@ -13,6 +13,10 @@
 
   .page__wrapper & {
     background-color: #222;
+
+    @media (max-width: 1500px) {
+      height: auto;
+    }
   }
 
   .section-heading {
@@ -27,6 +31,14 @@
     box-shadow: 0.3rem 0.3rem 0.5rem #111;
     transition: all 0.5s;
 
+    @media (max-width: 1500px) {
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 500px) {
+      margin-bottom: 2rem;
+    }
+
     &:hover {
       opacity: 1;
       box-shadow: 0.6rem 0.6rem 2rem #111;
@@ -35,6 +47,10 @@
 
   &__container {
     width: 90%;
+
+    @media (max-width: 1500px) {
+      width: 100%;
+    }
   }
 
   &__row {
@@ -42,9 +58,19 @@
 
     align-content: space-between;
     min-height: 60vh;
+
+    @media (max-width: 1500px) {
+      min-height: unset;
+      padding-top: 10rem;
+      padding-bottom: 2rem;
+    }
   }
 
   &__col {
-    @include col(lg, 4, 12, 6rem);
+    @include col(xs, 12, 12, 2rem);
+    @include col(sm, 6, 12, 1rem);
+    @include col(md, 6, 12, 2rem);
+    @include col(lg, 6, 12, 3rem);
+    @include col(xl, 4, 12, 6rem);
   }
 }

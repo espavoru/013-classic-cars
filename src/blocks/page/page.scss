@@ -35,6 +35,14 @@
   scroll-behavior: smooth;
   font-size: 62.5%;
 
+  @media (max-width: 600px) {
+    font-size: 55.5%;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 40%;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -67,6 +75,26 @@
     .change {
       left: 15vw;
       transform: rotateY(10deg);
+
+      @media (max-width: 1500px) {
+        left: 20vw;
+        transform: rotateY(15deg);
+      }
+
+      @media (max-width: 1000px) {
+        left: 25vw;
+        transform: rotateY(20deg);
+      }
+
+      @media (max-width: 750px) {
+        left: 30vw;
+        transform: rotateY(25deg);
+
+        @media (max-width: 600px) { // stylelint-disable-line
+          left: 0;
+          transform: rotateY(0);
+        }
+      }
     }
   }
 
@@ -101,6 +129,10 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1000px) {
+    padding-right: 0;
+  }
 }
 
 [tabindex='-1']:focus {

@@ -6,8 +6,12 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  @include col(lg, 4, 12, 0);
+  @include col(md, 6, 12, 0);
+  @include col(lg, 6, 12, 0);
+  @include col(xl, 4, 12, 0);
 
+  display: flex;
+  justify-content: center;
 
   &__inner {
     position: relative;
@@ -17,6 +21,11 @@
     transition: box-shadow 0.5s;
     box-shadow: 0.6rem 0.6rem 0.6rem #bbb;
     background-color: #fff;
+
+    @media (max-width: 1500px) {
+      max-width: 40rem;
+      margin-bottom: 5rem;
+    }
 
     &:hover {
       box-shadow: 1rem 1rem 1rem #bbb;
