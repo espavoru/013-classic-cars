@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="navbar__menu-line"></div>
             <div class="navbar__menu-line"></div>
           </div>
-          <nav class="navbar target"><a class="navbar__link" href="#home">Home</a><a class="navbar__link" href="#popular-cars">Popular Cars</a><a class="navbar__link" href="#">Video Gallery</a><a class="navbar__link" href="#contact">Contact</a></nav>
+          <nav class="navbar target"><a class="navbar__link" href="#home">Home</a><a class="navbar__link" href="#popular-cars">Popular Cars</a><a class="navbar__link" href="#video-gallery">Video Gallery</a><a class="navbar__link" href="#image-gallery">Image Gallery</a><a class="navbar__link" href="#contact">Contact</a></nav>
           <!--/.navbar-->
         </div>
       </header>
@@ -156,6 +156,36 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </section>
         <!--/.video-gallery-->
+      </div>
+      <div class="page__wrapper">
+        <section class="image-gallery target" id="image-gallery">
+          <h2 class="section-heading">Image Gallery</h2>
+          <div class="image-gallery__container">
+            <div class="image-gallery__shelf"></div>
+            <picture class="picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/image-gallery-02-320p.webp, img/image-gallery-02-640p.webp 2x" /><img class="image-gallery__img" alt="Classic Car" width="320" src="img/image-gallery-02-320p.jpg" srcset="img/image-gallery-02-640p.jpg 2x" />
+            </picture>
+            <picture class="picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/image-gallery-01-320p.webp, img/image-gallery-01-640p.webp 2x" /><img class="image-gallery__img" alt="Classic Car" width="320" src="img/image-gallery-01-320p.jpg" srcset="img/image-gallery-01-640p.jpg 2x" />
+            </picture>
+            <picture class="picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/image-gallery-03-320p.webp, img/image-gallery-03-640p.webp 2x" /><img class="image-gallery__img" alt="Classic Car" width="320" src="img/image-gallery-03-320p.jpg" srcset="img/image-gallery-03-640p.jpg 2x" />
+            </picture>
+          </div>
+          <div class="image-gallery__container">
+            <div class="image-gallery__shelf"></div>
+            <picture class="picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/image-gallery-04-320p.webp, img/image-gallery-04-640p.webp 2x" /><img class="image-gallery__img" alt="Classic Car" width="320" src="img/image-gallery-04-320p.jpg" srcset="img/image-gallery-04-640p.jpg 2x" />
+            </picture>
+            <picture class="picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/image-gallery-05-320p.webp, img/image-gallery-05-640p.webp 2x" /><img class="image-gallery__img" alt="Classic Car" width="320" src="img/image-gallery-05-320p.jpg" srcset="img/image-gallery-05-640p.jpg 2x" />
+            </picture>
+            <picture class="picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/image-gallery-06-320p.webp, img/image-gallery-06-640p.webp 2x" /><img class="image-gallery__img" alt="Classic Car" width="320" src="img/image-gallery-06-320p.jpg" srcset="img/image-gallery-06-640p.jpg 2x" />
+            </picture>
+          </div>
+        </section>
+        <!--/.image-gallery-->
       </div>
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner"></div>
