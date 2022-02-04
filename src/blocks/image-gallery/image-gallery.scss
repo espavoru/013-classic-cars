@@ -1,0 +1,75 @@
+// В этом файле должны быть стили для БЭМ-блока image-gallery, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.image-gallery {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .picture {
+    position: absolute;
+    bottom: 6rem;
+    left: 50%;
+    max-width: 320px;
+
+    transform: translateX(-50%) rotateX(0.5deg);
+    transform-origin: bottom;
+    transition: all 0.3s;
+
+    &:first-of-type {
+      left: 28%;
+    }
+
+    &:last-of-type {
+      left: 72%;
+    }
+
+    &:hover {
+      transform: translateX(-50%) rotateX(0);
+    }
+
+    &:hover #{$block-name}__img {
+      box-shadow: 0 0.2rem 0.3rem #888;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0;
+    perspective: 10rem;
+  }
+
+  &__img {
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s;
+    box-shadow: 0.2rem -0.2rem 0.5rem #888;
+  }
+
+  &__shelf {
+    position: relative;
+    width: 80%;
+    height: 3rem;
+    margin: auto;
+
+    box-shadow: 1rem 1rem 5rem #444;
+    background-color: rgba(38, 126, 199, 0.8);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10rem;
+      width: 100%;
+      height: 10rem;
+
+      transform: rotateX(20deg);
+      transform-origin: bottom;
+      background-color: rgba(34, 152, 248, 0.7);
+    }
+  }
+}

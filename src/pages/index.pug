@@ -15,7 +15,8 @@ block header
     nav.navbar.target
       a.navbar__link(href='#home') Home
       a.navbar__link(href='#popular-cars') Popular Cars
-      a.navbar__link(href='#') Video Gallery
+      a.navbar__link(href='#video-gallery') Video Gallery
+      a.navbar__link(href='#image-gallery') Image Gallery
       a.navbar__link(href='#contact') Contact
     ///.navbar
 
@@ -110,3 +111,57 @@ block content
               iframe(src='https://www.youtube.com/embed/ruw7XBOUDOU', frameborder='0', allowfullscreen='')
             //- video.video-gallery__item(src='video/car-video-6.mp4', muted, loop)
     ///.video-gallery
+
+  .page__wrapper
+    section.image-gallery.target#image-gallery
+      h2.section-heading Image Gallery
+
+      .image-gallery__container
+        .image-gallery__shelf
+        +picture({
+          'img': 'image-gallery-02',
+          'alt': 'Classic Car',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }, 'image-gallery__img')
+        +picture({
+          'img': 'image-gallery-01',
+          'alt': 'Classic Car',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }, 'image-gallery__img')
+        +picture({
+          'img': 'image-gallery-03',
+          'alt': 'Classic Car',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }, 'image-gallery__img')
+
+      .image-gallery__container
+        .image-gallery__shelf
+        +picture({
+          'img': 'image-gallery-04',
+          'alt': 'Classic Car',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }, 'image-gallery__img')
+        +picture({
+          'img': 'image-gallery-05',
+          'alt': 'Classic Car',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }, 'image-gallery__img')
+        +picture({
+          'img': 'image-gallery-06',
+          'alt': 'Classic Car',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }, 'image-gallery__img')
+
+    ///.image-gallery
