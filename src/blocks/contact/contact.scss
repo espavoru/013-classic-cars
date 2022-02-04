@@ -1,0 +1,171 @@
+// В этом файле должны быть стили для БЭМ-блока contact, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contact {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (min-width: $screen-xs) {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-320p.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-640p.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .no-webp & {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-640p.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .no-webp & {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-320p.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-640p.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-1280p.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .no-webp & {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-1280p.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .no-webp & {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-640p.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-1280p.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-2560p.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .no-webp & {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-2560p.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .no-webp & {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-1280p.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $screen-xl) {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-2560p.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .no-webp & {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/contact-bg-01-2560p.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .page & {
+    margin-bottom: 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60rem;
+    height: 45rem;
+    border: 2rem solid rgba(255, 255, 255, 0.8);
+    padding: 5rem;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    input,
+    textarea {
+      flex-shrink: 0;
+      width: 100%;
+      height: 4rem;
+      margin: 2rem 0;
+      border: 0.1rem solid #fff;
+      padding: 0.5rem;
+
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+      color: #fff;
+
+      transition: all 0.3s;
+      background-color: transparent;
+
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    textarea {
+      max-width: 100%;
+      min-height: 8rem;
+    }
+  }
+
+  [type='submit'] {
+    @include btn-hover;
+
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: #444;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  }
+
+  &__copyright {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+  }
+}
